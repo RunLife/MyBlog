@@ -1,0 +1,36 @@
+<% if (!user) { %>
+	<div class="hero-unit">
+		<h1>欢迎来到 MyBlog</h1>
+		<p>MyBlog 是一个沿着时间轴的博客系统。</p>
+		<p>
+			<a href="/login" class="btn btn-primary btn-large">登录</a>
+			<a href="/reg" class="btn btn-large">立即注册</a>
+		</p>
+	</div>
+<% } else { %>
+   <%- partial('say') %> 
+<% } %>
+<div class="row">
+	<div class="span4">
+		<h2>Runner Say:</h2>
+		<p>这将让我的记忆沿着时间轴慢慢的想起，让我更加有信心面对未来！</p>
+	</div>
+	<div class="span4">
+		<h2>跑命 Say:</h2>
+		<p>
+			面对青葱的青春岁月，我想努力的把握好自己的人生轨迹；
+			沿着时间轴，我可以记录我生命中的精彩时刻，也让保存我
+			对于过去的思考和总结，让我吸取教训，更加自信的迎接明
+			天的到来。
+		</p>
+	</div>
+	<div class="span4">
+		<h2>老头 Say:</h2>
+		<p>
+			沿着时间轴，我可以畅游在过去的回忆中，回忆起当初的酸
+			甜苦辣和点点滴滴的人生片刻。回想起这些珍贵的记忆，我
+			不再抱怨生活，也不再后悔现状，因为自己曾经奋斗过了，
+			已经创造了一个真正属于自己的精彩人生了。
+		</p>
+	</div>
+</div>
